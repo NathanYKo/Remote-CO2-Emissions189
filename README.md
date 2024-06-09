@@ -6,7 +6,7 @@
 
 ---
 <p align="center">
-Jun Hwang,
+Jun-Hee Hwang,
 </p>
 
 <p align="center">
@@ -21,16 +21,15 @@ Nathan Ko
 
 ## Abstract
 
-This study explores the relationship between the brief transition to remote work in 2020 and $\mathrm{CO_2}$ consumptions within the U.S. with the goal.... Utilizing a dataset from  U.S. Energy Information Administration, we embark on a comprehensive analysis using a variety of statistical methods including linear regression and hypothesis testing, to uncover....  Through linear regression, we aim to explore the probabilistic and statistical relationship. This research evaluates the environmental impact of increased remote work by comparing carbon footprints before, during, and after the pandemic, focusing on how shifts in remote work affect carbon emissions, urban planning, and infrastructure development. It provides valuable insights for governments, companies, and communities to adapt policies and projects that support sustainability goals and accommodate future commuting trends
-
+This study explores the relationship between the brief transition to remote work in 2020 and $\mathrm{CO_2}$ consumptions within the U.S. with the goal of understanding the environmental impacts of this shift. Utilizing a dataset from the U.S. Energy Information Administration, we embark on a comprehensive analysis using a variety of statistical methods including linear regression and hypothesis testing, to uncover significant trends and correlations. Through linear regression, we aim to explore the probabilistic and statistical relationship between the increase in remote work and changes in CO2 emissions. This research evaluates the environmental impact of increased remote work by comparing carbon footprints before, during, and after the pandemic, focusing on how shifts in remote work affect carbon emissions, urban planning, and infrastructure development. It provides valuable insights for governments, companies, and communities to adopt policies and projects that support sustainable practices.
 
 
 
 
 ## 1. Introduction
 
-By evaluating the environmental impact of increased remote work by comparing carbon footprints before the pandemic, during the pandemic, and after the pandemic. Comparing carbon footprints to evaluate the environmental impact before, during, and after the pandemic is important for many reasons. Understanding how remote work affects carbon emissions can help governments make rules, helping meet goals to reduce pollution. Insights from this analysis can help many companies that are committed to sustainability goals to understand how shifting work patterns may contribute to the goals. 
-This research can also give an intricate analysis of the environmental change due to increased remote works, in which urban planners and infrastructure developers can adjust their projects to accommodate a future with potentially less commuting, which may reshape public transportation schedules, reducing road expansions, or repurposing office space areas into residential or green spaces. Moreover, communities can better prepare for any future disruptions, whether they’re due to health issues, environmental concerns, or technology changes. In this study, we will… 
+The COVID-19 pandemic changed work patterns across the world, shifting the work trend into remote. This raised questions about its potential impacts on the world, including environmental sustainability. By evaluating the environmental impact of increased remote work by comparing carbon footprints before the pandemic, during the pandemic, and after the pandemic. Comparing carbon footprints to evaluate the environmental impact before, during, and after the pandemic is important for many reasons. Understanding how remote work affects carbon emissions can help governments make rules, helping meet goals to reduce pollution. Insights from this analysis can help many companies that are committed to sustainability goals to understand how shifting work patterns may contribute to the goals. This research can also give an intricate analysis of the environmental change due to increased remote works, in which urban planners and infrastructure developers can adjust their projects to accommodate a future with potentially less commuting, which may reshape public transportation schedules, reducing road expansions, or repurposing office space areas into residential or green spaces. Moreover, communities can better prepare for any future disruptions, whether they’re due to health issues, environmental concerns, or technology changes. In this study, we will analyze the trends in CO2 emissions across different states over time, evaluate the relationship between the number of people working from home and CO2 emissions, identify any significant changes in CO2 emissions corresponding to the periods before, during, and after the peak of remote work adoption, and provide recommendations for policymakers, businesses, and urban planners on leveraging remote work as a strategy for reducing carbon footprints. Through various statistical analyses, including linear regression and residual analysis, this study offers a detailed understanding of the environmental implications of remote.​
+
 
 ## 2. Demographic and Behavioral Data
 	
