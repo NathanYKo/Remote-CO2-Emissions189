@@ -80,12 +80,6 @@ This scatter plot shows the relationship between the number of people working fr
 **Figure 4: Merged Line Plot**
 </p>
 
-<p align="center">
-<img src = "images/merged_lineplot.png">
-	
-**Figure 4: Merged Line Plot**
-</p>
-
 <<<<<<< Updated upstream
 ## 3 Regression model
 =======

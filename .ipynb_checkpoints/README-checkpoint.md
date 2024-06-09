@@ -35,7 +35,8 @@ This research can also give an intricate analysis of the environmental change du
 ## 2. Demographic and Behavioral Data
 	
 ### 2.1 Data Source
-Our data comes from the U.S. Energy Information Administration and... It comprises CO2 emissions data for all fifty states from 1970 to 2021. With other columns
+Our data comes from the U.S. Energy Information Administration and... It comprises CO2 emissions data for all fifty states from 1970 to 2021. With other columns.
+We have two datasets: 
 
 	
 ### 2.2 Exploratory Data Analysis
@@ -73,6 +74,12 @@ This scatter plot shows the relationship between the number of people working fr
 </p>
 
 
+<p align="center">
+<img src = "images/merged_lineplot.png">
+	
+**Figure 4: Merged Line Plot**
+</p>
+
 <<<<<<< Updated upstream
 ## 3 Regression model
 =======
@@ -89,15 +96,16 @@ This scatter plot shows the relationship between the number of people working fr
 
 <p align="center">
 <img src = "images/residual.png">
-	<p align="center">
-**Figure 4: Residual Plot**
+
+**Figure 5: Residual Plot**
 		</p>
 </p>
 
 <p align="center">
 <img src = "images/QQplot.png">
 	<p align="center">
-**Figure 5: QQplot**
+
+**Figure 6: QQplot**
 		</p>
 </p>
 <p>
@@ -161,11 +169,9 @@ This suggests that the regression model fits the data well and that the assumpti
 
 References
 
-[1] Kapturov, Alexander. (2024). Sleep Patterns. Kaggle.
-      https://www.kaggle.com/datasets/kapturovalexander/sleep-patterns
+[1] U.S. Energy Information Administration. (2023). State energy-related carbon dioxide emissions by year. EIA. 
+		https://www.eia.gov/environment/emissions/state/
       
-[2] Bohi, Naimish. (2024). Sleep Patterns with Pandas. Kaggle.
-      https://www.kaggle.com/code/naimishbhoi/sleep-patterns-with-pandas
+[2] (2024). . United States Census Bureau.
+      https://data.census.gov/
       
-[3] Giacometti, Alessandro. (2024). Sleep Health Analysis-How to Sleep Better. Kaggle.
-      https://www.kaggle.com/code/alessandrogiacometti/sleep-health-analysis-how-to-sleep-better
