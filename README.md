@@ -35,7 +35,8 @@ This research can also give an intricate analysis of the environmental change du
 ## 2 Demographic and Behavioral Data
 	
 ### 2.1 Data Source
-Our data comes from the U.S. Energy Information Administration and... It comprises CO2 emissions data for all fifty states from 1970 to 2021. With other columns
+Our data comes from the U.S. Energy Information Administration and... It comprises CO2 emissions data for all fifty states from 1970 to 2021. With other columns.
+We have two datasets: 
 
 	
 ### 2.2 Exploratory Data Analysis
@@ -64,6 +65,12 @@ Our data comes from the U.S. Energy Information Administration and... It compris
 </p>
 
 
+<p align="center">
+<img src = "images/merged_lineplot.png">
+	
+**Figure 4: Merged Line Plot**
+</p>
+
 
 ## 3 Regression model
 	
@@ -77,15 +84,16 @@ Our data comes from the U.S. Energy Information Administration and... It compris
 
 <p align="center">
 <img src = "images/residual.png">
-	<p align="center">
-**Figure 4: Residual Plot**
+
+**Figure 5: Residual Plot**
 		</p>
 </p>
 
 <p align="center">
 <img src = "images/QQplot.png">
 	<p align="center">
-**Figure 5: QQplot**
+
+**Figure 6: QQplot**
 		</p>
 </p>
 
