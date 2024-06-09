@@ -79,19 +79,33 @@ This scatter plot shows the relationship between the number of people working fr
 **Figure 4: Merged Line Plot**
 </p>
 
-<<<<<<< Updated upstream
-## 3 Regression model
-=======
-## 3. Predictive Model
->>>>>>> Stashed changes
+## 3  Statistical Analysis
+
+### 3.1 Mann-Whiteny U Test
+The utilization of the Mann-Whitney U test in our investigation is justified by its effectiveness in comparing the medians of two independent samples, which is in line with our research objective of determining if there is a statistically significant difference between the CO2 consumption in the year 2020 and that of other years. The Mann-Whitney U test is particularly advantageous for our dataset as it does not require the assumption of normally distributed data, thereby providing a robust alternative to the t-test when normality cannot be assumed. This nonparametric test is ideal because it evaluates the ranks of the data rather than their absolute values, making it well-suited for our analysis where the exact distribution of CO2 consumption is unknown or potentially skewed. Furthermore, the test is sensitive to differences in the central tendency of the distributions, offering a precise measure to ascertain whether the shifts observed in CO2 consumption patterns during 2020 are statistically distinct from previous years, thereby supporting informed decision-making in environmental policy and planning.
+
+Question: Was the average CO2 consumption in the year 2020 significantly lower than the average CO2 consumption in previous years?
+
+Null Hypothesis:
+
+$H_0$: The mean CO2 consumption in 2020 is equal to or greater than the mean $\mathrm{CO_2}$ consumption in other years.
+
+Alternative Hypothesis:
+
+$H_1$: The mean $\mathrm{CO_2}$ consumption in 2020 is lower than the mean $\mathrm{CO_2}$ consumption in other years.
+
+### 3.1.1 Assumptions
+We want to use the Mann_Whitney U-test because we do not have big enough dataset so that a t-test would perform well. Also our data is not distributed normally. 
+
+Before performing the Mann-Whiteny U test, the data must meet these assumptions:
+- Distributions between two groups must be similar. This KDE plot shows that the year 2020 and other years do not have different distribution shapes.
+
+<p align="center">
+<img src = "images/KDE_plot.png">
 	
-### 3.1 Linear Regression
 
-
-
-
-
-### 3.1.1 Assumptions and Model Diagnostics
+### 3.2 Linear regression 
+### 3.2.1 Assumptions and Model Diagnostics
 
 <p align="center">
 <img src = "images/residual.png">
@@ -118,14 +132,6 @@ This suggests that the regression model fits the data well and that the assumpti
 
 
 	
-### 3.2 Hypothesis Testing
-
-### 3.2
-
-The p-value is above the typical alpha level of 0.05, which suggests that you do not have enough statistical evidence to reject the null hypothesis that the distributions of CO2 consumption for 2020 and other years are the same. This implies that the distributions may indeed have similar shapes, satisfying one of the crucial assumptions for the Mann-Whitney U test.
-
-Decision Making: Based on this t-test, there is sufficient evidence to conclude that there was a decrease in CO2 consumption in 2020 compared to other years. Policy makers, researchers, or stakeholders looking at interventions based on changes in CO2 levels might decide to take actions based on the year alone.
-
 
 	
 
