@@ -21,7 +21,11 @@ Nathan Ko
 
 ## Abstract
 
-This study explores the intricate relationship between demographic characteristics, behavioral patterns, and individual well-being, with the goal of identifying key determinants of health status. Utilizing a dataset from Kaggle, we embark on a comprehensive analysis using a variety of predictive models including logistic regression and random forest, to uncover the factors that significantly impact an individual’s health status. Our research includes a wide range of variables such as sleep patterns, education level, employment status, marital status, and self-reported health status. Through logistic regression and random forest, we aim to explore the probabilistic and statistical relationship between these variables, the likelihood of good health based on these variables, and capture complex non-linear interactions between them. The findings from this research are expected to enhance our understanding of the multifaceted determinants of health and provide an effective model to predict individual well-being. Ultimately, this study aims to inform public health strategies and individual wellness practices, contributing to the improvement of health outcomes across diverse populations.
+This study explores the relationship between the brief transition to remote work in 2020 and $\mathrm{CO_2}$ consumptions within the U.S. with the goal.... Utilizing a dataset from  U.S. Energy Information Administration, we embark on a comprehensive analysis using a variety of statistical methods including linear regression and hypothesis testing, to uncover....  Through linear regression, we aim to explore the probabilistic and statistical relationship. This research evaluates the environmental impact of increased remote work by comparing carbon footprints before, during, and after the pandemic, focusing on how shifts in remote work affect carbon emissions, urban planning, and infrastructure development. It provides valuable insights for governments, companies, and communities to adapt policies and projects that support sustainability goals and accommodate future commuting trends
+
+
+
+
 
 ## 1 Introduction
 
@@ -31,37 +35,37 @@ This research can also give an intricate analysis of the environmental change du
 ## 2 Demographic and Behavioral Data
 	
 ### 2.1 Data Source
-
+Our data comes from the U.S. Energy Information Administration and... It comprises CO2 emissions data for all fifty states from 1970 to 2021. With other columns
 
 	
 ### 2.2 Exploratory Data Analysis
 
 
 <p align="center">
-<img src = "images/pairplot.png">
+<img src = "images/lineplot_CO2.png">
 	
-**Figure 1: Pairplot**
+**Figure 1: Lineplot**
 </p>
 
 
 <p align="center">
-<img src = "images/boxplot3.png">
+<img src = "images/lineplot_WFH.png">
 
-**Figure 2: Boxplot**
+**Figure 2: Lineplot**
 </p>
 
 
 <p align="center">
-<img src = "images/heatmap.png">
+<img src = "images/corrplot.png">
 
-<p align="center">
-**Figure 3: Heatmap**
+
+**Figure 3: Correleation Scatter plot**
 	</p>
 </p>
 
 
 
-## 3 Predictive Model
+## 3 Regression model
 	
 ### 3.1 Linear Regression
 
@@ -72,51 +76,33 @@ This research can also give an intricate analysis of the environmental change du
 ### 3.1.1 Assumptions and Model Diagnostics
 
 <p align="center">
-<img src = "images/redisuals.png">
+<img src = "images/residual.png">
 	<p align="center">
 **Figure 4: Residual Plot**
 		</p>
 </p>
 
 <p align="center">
-<img src = "images/logodds.png">
+<img src = "images/QQplot.png">
 	<p align="center">
-**Figure 5: Log-odds against predictors**
+**Figure 5: QQplot**
 		</p>
 </p>
 
 
-<p align="center">
-<img src = "images/ROCcurve.png">
-<p align="center">
-**Figure 6: ROC Curve**
-	</p>
-</p>
-
 
 ### 3.1.2 Preprocessing, Modeling and Prediction
 	
-<p align="center">
-<img src = "images/logisticcm.png">
-<p align="center">
-**Figure 7: Confusion matrix**
-	</p>
-</p>
+
 
 	
-### 3.2 Random Forest Classification
+### 3.2 Hypothesis Testing
 	
 
 
 
 
 
-
-
-
-
-<p align="center">
-<img src = "images/randomforestconf.png">
 	
 **Figure 8: Confusion matrix**
 </p>
