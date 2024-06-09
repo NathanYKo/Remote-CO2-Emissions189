@@ -119,6 +119,14 @@ This suggests that the regression model fits the data well and that the assumpti
 
 	
 ### 3.2 Hypothesis Testing
+
+### 3.2
+
+The p-value is above the typical alpha level of 0.05, which suggests that you do not have enough statistical evidence to reject the null hypothesis that the distributions of CO2 consumption for 2020 and other years are the same. This implies that the distributions may indeed have similar shapes, satisfying one of the crucial assumptions for the Mann-Whitney U test.
+
+Decision Making: Based on this t-test, there is sufficient evidence to conclude that there was a decrease in CO2 consumption in 2020 compared to other years. Policy makers, researchers, or stakeholders looking at interventions based on changes in CO2 levels might decide to take actions based on the year alone.
+
+
 	
 
 
