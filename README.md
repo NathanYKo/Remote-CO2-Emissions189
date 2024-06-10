@@ -175,12 +175,4 @@ Despite our findings, there are several limitations in the analysis. The first l
 
 To address these limitations for future work, we could incorporate a broader set of control variables and extend the time frame to capture long-term trends. Additionally, exploring the impact of remote work on other environmental factors could provide a better understanding of its environmental benefits. We could also compare results across different regions and countries to generalize and identify specific factors that influence the relationship between remote work and CO2 emissions. Finally, exploring alternative modeling approaches for improving the logistic regression model could help capture the underlying complexities and non-linear relationships in the data. 
 
-
-References
-
-[1] U.S. Energy Information Administration. (2023). State energy-related carbon dioxide emissions by year. EIA. 
-		https://www.eia.gov/environment/emissions/state/
-      
-[2] (2024). . United States Census Bureau.
-      https://data.census.gov/
       
