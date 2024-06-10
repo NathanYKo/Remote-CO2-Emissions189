@@ -168,39 +168,6 @@ The F1 score is quite low, which indicates a poor balance between precision and 
 ## 4.  Conclusion and Future Works
 	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 References
 
 [1] U.S. Energy Information Administration. (2023). State energy-related carbon dioxide emissions by year. EIA. 
