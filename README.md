@@ -166,7 +166,13 @@ The F1 score is quite low, which indicates a poor balance between precision and 
 
 	
 ## 4.  Conclusion and Future Works
-	
+
+The analysis performed in this project aimed to explore the environmental impact of increased remote work by comparing carbon footprints before, during, and after the COVID-19 pandemic. Using a dataset from the U.S. Energy Information Administration (EIA) and the U.S. Census Bureau's American Community Survey (ACS), we conducted statistical tests, including linear regression and hypothesis testing, to identify significant trends and correlations. 
+
+The analysis showed a statistically significant decrease in CO2 emissions in 2020 compared to the other years. This supports our hypothesis that the shift to remote work during the pandemic contributed to a reduction in carbon emissions. The Mann-Whitney U-Test results indicate that the decrease in CO2 consumption in 2020 was significant at the 10% significance level due to a p-value of 0.06. Additionally, linear regression models showed a strong association between the increase in remote work and the reduction in carbon emissions. 
+
+Despite our findings, there are several limitations in the analysis. The first limitation is the dataset. The dataset does not fully capture all of the factors that influenced CO2 emissions during the same period. The second limitation is the assumption of normality. The analysis had to rely on the Mann-Whitney U-Test because of the assumption of non-normality in the data, which can affect the strength of the conclusions drawn from the hypothesis test. The third limitation is the time frame. This project focuses on a short time frame around the pandemic. The long-term impact of remote work on CO2 emissions require a longer time frame to account for potential changes in work patterns post-pandemic. The fifth limitation is other variables. In our analysis, we did not control the other variables that could have an impact on CO2 emissions. The Final limitation is the logistic regression model. The logistic regression model showed an average performance to distinguish between classes, however, the residual plot suggested that it might not capture all underlying complexities. The low recall rate and F1 score showed that the model was conservative in predicting the positive class, missing many actual positives. 
+
 
 References
 
