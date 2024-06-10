@@ -54,6 +54,8 @@ To perform a comprehensive analysis of the environmental impact of remote work, 
 <p align="center">
 <img src = "images/lineplot_CO2.png">
 	Figure 1: Lineplot
+	<p align="center">
+
 </p>
 <p>
 This line plot displays the changes in CO2 emissions over time from 2018 to 2021 for selected states. The y-axis shows the CO2 emissions in million metric tons (MMT), and the x-axis represents the years.
@@ -64,6 +66,7 @@ It is also possible to see that there is a sudden drop in CO2 Emissions from 201
 <p align="center">
 <img src = "images/lineplot_WFH.png">
 Figure 2: Lineplot
+<p align="center">
 </p>
 <p>
 This line plot illustrates the change in the number of people working from home from 2018 to 2021 for selected states. The y-axis shows the number of people working from home, and the x-axis represents the years. Most of the states such as California shows a significant increase in the number of people working from home, especially around 2020, likely due to the COVID-19 pandemic.    
@@ -72,6 +75,7 @@ This line plot illustrates the change in the number of people working from home 
 <p align="center">
 <img src = "images/corrplot.png">
 Figure 3: Correleation Scatter plot
+<p align="center">
 	</p>
 </p>
 <p>
@@ -82,7 +86,7 @@ This scatter plot shows the relationship between the number of people working fr
 <p align="center">
 <img src = "images/merged_lineplot.png">
 Figure 4: Merged Line Plot
-</p>
+<p align="center">
 
 ## 3  Statistical Analysis
 
@@ -108,6 +112,7 @@ Before performing the Mann-Whitney U-test, we found that our data had these char
 
 <p align="center">
 <img src = "images/KDE_plot.png">
+<p align="center">
 Figure 5: KDE Plot
 
 - Not enough data points to justify the assumption of normality due to the Central Limit Theorem. As a result, we proceeded with the Mann-Whitney U-Test.
@@ -129,6 +134,7 @@ We preprocessed our data so that we created a column `Is_2020` to represent our 
 #### Checking for Linearity
 <p align="center">
 <img src = "images/residual_logistic.png">
+<p align="center">
 Figure 6: Residual Plot for Logistic Regression
 
 Logistic regression is different in that to we must look to the residual plots to make observations about the model's goodness-of-fit and other characteristics. We plotted the deviance residuals against the predicted probabilities in order to check for linearity. There is a noticeable trend where residuals decrease as the predicted probabilities increase. This non-random pattern, particularly the curved nature, suggests that the logistic regression model might not be capturing all the underlying complexities or non-linear relationships in the data. Ideally, 
@@ -141,6 +147,7 @@ We achieved a 80.5% accuracy on our model which is relatively high considering w
 
 <p align="center">
 <img src = "images/roc_curve.png">
+<p align="center">
 Figure 7: ROC Curve Plot
 
 The curve is above the diagonal line (which represents a random classifier), indicating that the logistic regression model performs better than a random guess. The initial steepness of the ROC curve is a good sign. It means that the model achieves a high true positive rate while maintaining a low false positive rate at lower threshold settings. However, there are segments where the curve flattens or progresses incrementally, suggesting that increasing the true positive rate beyond certain points requires accepting significantly higher false positive rates.
@@ -150,6 +157,7 @@ The curve is above the diagonal line (which represents a random classifier), ind
 
 <p align="center">
 <img src = "images/cm.png">
+<p align="center">
 Figure 8: Confusion Matrix
 
 The recall is quite low, indicating the model fails to identify the positive class (2020) effectively. This suggests that while the model is conservative about predicting the positive class, it misses many actual positives.
