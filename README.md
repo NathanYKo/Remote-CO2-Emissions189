@@ -82,66 +82,48 @@ This scatter plot shows the relationship between the number of people working fr
 ## 3  Statistical Analysis
 
 ### 3.1 Mann-Whiteny U Test
-The utilization of the Mann-Whitney U test in our investigation is justified by its effectiveness in comparing the medians of two independent samples, which is in line with our research objective of determining if there is a statistically significant difference between the CO2 consumption in the year 2020 and that of other years. The Mann-Whitney U test is particularly advantageous for our dataset as it does not require the assumption of normally distributed data, thereby providing a robust alternative to the t-test when normality cannot be assumed. This nonparametric test is ideal because it evaluates the ranks of the data rather than their absolute values, making it well-suited for our analysis where the exact distribution of CO2 consumption is unknown or potentially skewed. Furthermore, the test is sensitive to differences in the central tendency of the distributions, offering a precise measure to ascertain whether the shifts observed in CO2 consumption patterns during 2020 are statistically distinct from previous years, thereby supporting informed decision-making in environmental policy and planning.
+We wanted confirm our conclusion that there is a statistically significant difference between the CO2 consumption in the year 2020 and that of other years before including remote work data.
+The Mann-Whitney U test is particularly advantageous for our dataset as it does not require the assumption of normally distributed data, thereby providing a robust alternative to the t-test when normality cannot be assumed. This nonparametric test is ideal because it evaluates the ranks of the data rather than their absolute values, making it well-suited for our analysis where the exact distribution of CO2 consumption is unknown or potentially skewed.  
 
-Question: Was the average CO2 consumption in the year 2020 significantly lower than the average CO2 consumption in previous years?
+**Question:** Was the average CO2 consumption in the year 2020 significantly lower than the average CO2 consumption in previous years?
 
-Null Hypothesis:
-
+**Null Hypothesis:**
 $H_0$: The mean CO2 consumption in 2020 is equal to or greater than the mean $\mathrm{CO_2}$ consumption in other years.
 
-Alternative Hypothesis:
-
+**Alternative Hypothesis:**
 $H_1$: The mean $\mathrm{CO_2}$ consumption in 2020 is lower than the mean $\mathrm{CO_2}$ consumption in other years.
 
-### 3.1.1 Assumptions
-We want to use the Mann_Whitney U-test because we do not have big enough dataset so that a t-test would perform well. Also our data is not distributed normally. 
+**Significance Level:** 10%
 
-Before performing the Mann-Whiteny U test, the data must meet these assumptions:
-- Distributions between two groups must be similar. This KDE plot shows that the year 2020 and other years do not have different distribution shapes.
+### 3.1.1 Assumptions
+Before we perform any hypothetical test, we want to check what trends our data follows. We compared our two data groups' distributions if they were similar or different and we check if they were from a normal distribution.  
+
+Before performing the Mann-Whitney U-test, we found that our data had these characteristics:
+- Distributions between two groups must be similar. The KDE plot (Figure 5) shows that the year 2020 and other years do not have different distribution shapes. In addition, we performed a Kolmogorov-Smirnov test. With a KS statistic of 0.15 and a p-value of 0.16, we cannot reject the null hypthesis that they are statistically from different distributions. 
 
 <p align="center">
 <img src = "images/KDE_plot.png">
+
+**Figure 5: KDE Plot**
+- Not enough data points to justify the assumption of normality due to the Central Limit Theorem. As a result, we proceeded with the Mann-Whitney U-Test.
+
+#### 3.1.2 Performance
+After running `mannwhitneyu(data_2020, data_other_years, alternative='less')`, we recieved a p-value of 0.06, which is less than our significance level of 10%. This allows us to reject the null hypothesis to conclude that there was a statistically significant decrease in $\mathrm{CO_2}$ consumption in 2020 compared to other years.
 	
 
-### 3.2 Linear regression 
+### 3.2 Logistic regression 
 ### 3.2.1 Assumptions and Model Diagnostics
 
-<p align="center">
-<img src = "images/residual.png">
-
-**Figure 5: Residual Plot**
-		</p>
-</p>
-
-<p align="center">
-<img src = "images/QQplot.png">
-	<p align="center">
-
-**Figure 6: QQplot**
-		</p>
-</p>
-<p>
-The histogram of residuals and Q-Q plot are provided to see the general trend and to assess if the dataset follows a normal distribution. In this histogram, the residuals appear to be normally distributed, centered around zero, with a bell-shaped curve. 
-This suggests that the regression model fits the data well and that the assumptions of normality and homoscedasticity (constant variance) of residuals are likely satisfied.    
-</p>
-
-
-### 3.1.2 Preprocessing, Modeling and Prediction
-	
-
-
-	
-
-	
+#### Testing for independence
 
 
 
 
 
 	
-**Figure 8: Confusion matrix**
-</p>
+
+
+
 
 	
 ## 4.  Conclusion and Future Works
